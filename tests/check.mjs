@@ -12,6 +12,7 @@ assert.equal((html.match(/class="product(?: |")/g) || []).length, 6);
 assert.equal((html.match(/data-product=/g) || []).length, 6);
 assert.equal((html.match(/src="assets\/product-[^"]+\.webp"/g) || []).length, 6);
 assert.match(html, /src="assets\/hero-editorial\.webp"/);
+assert.equal((html.match(/src="assets\/teagar-company-mark\.webp"/g) || []).length, 2);
 assert.equal((html.match(/alt="/g) || []).length >= 10, true);
 assert.match(html, /meta name="description"/);
 assert.equal((html.match(/aria-label="Adicionar [^"]+ à sacola"/g) || []).length, 6);
