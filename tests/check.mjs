@@ -44,6 +44,8 @@ assert.match(css, /\.closing em,\.closing \.eyebrow,\.form-status,\.form-error\{
 assert.match(css, /:focus-visible\{outline:3px solid currentColor;outline-offset:3px;box-shadow:0 0 0 6px var\(--signal\)\}/);
 assert.match(css, /\.edition\{grid-column:1\/-1;grid-row:2\}/);
 assert.match(css, /\.footer\{grid-template-columns:1fr\}/);
+assert.match(css, /\.add>span\[aria-hidden="true"\]\{float:right;font-size:20px\}/);
+assert.doesNotMatch(css, /\.add span\{/);
 
 assert.match(js, /setAttribute\('aria-pressed', selected\)/);
 assert.match(js, /product:not\(\[hidden\]\)/);
