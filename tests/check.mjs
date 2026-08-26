@@ -44,6 +44,9 @@ for (const file of readdirSync(new URL('assets/', root))) {
 
 assert.match(css, /prefers-reduced-motion:reduce/);
 assert.match(css, /@media\(max-width:720px\)/);
+assert.match(css, /\.product-grid\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
+assert.match(css, /\.hero-figure\{order:-1;aspect-ratio:1\/1\}/);
+assert.match(css, /\.field-images\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
 assert.match(css, /--signal-text:#a64000;--signal-light:#ffb17a/);
 assert.match(css, /\.closing em,\.closing \.eyebrow,\.form-status,\.form-error\{color:var\(--signal-light\)\}/);
 assert.match(css, /:focus-visible\{outline:3px solid currentColor;outline-offset:3px;box-shadow:0 0 0 6px var\(--signal\)\}/);
