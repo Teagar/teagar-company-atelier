@@ -5,7 +5,8 @@ Todos os arquivos SVG em `assets/` foram desenhados autoralmente para esta imple
 As fotografias WebP foram geradas especificamente para esta demonstração com prompts autorais, usando Nano Banana (`gemini-2.5-flash-image`) via MeliGPT. Os arquivos foram revisados visualmente, recortados nas proporções declaradas e exportados sem metadados.
 
 - `atelier-mark.svg` e `atelier-social.svg`: marca e cartão social autorais do Atelier.
-- `teagar-company-mark.webp`: marca oficial fornecida pela Teagar Company, otimizada para cabeçalho e rodapé.
-- `hero-editorial.svg`, `product-*.svg`, `interlude.svg`, `field-*.svg`: ilustrações originais em SVG, sem metadados sensíveis e com dimensões declaradas no HTML.
+- `teagar-company-mark.webp`: marca oficial fornecida pela Teagar Company, otimizada em papel + laranja para cabeçalho e rodapé escuros.
+- `hero-editorial.svg`, `product-*.svg`, `interlude.svg`, `field-*.svg`: ilustrações originais preservadas como fontes editoriais, sem uso na página publicada.
 - `hero-editorial.webp`: fotografia editorial gerada para a abertura da página.
 - `product-*.webp`: seis fotografias de catálogo geradas para as peças da coleção.
+- `interlude.webp` e `field-*.webp`: três fotografias de uso e construção geradas para completar a narrativa editorial.
