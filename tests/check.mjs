@@ -1,0 +1,17 @@
+import { readFileSync, readdirSync } from 'node:fs';
+import { strict as assert } from 'node:assert';
+const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+const css = readFileSync(new URL('../styles.css', import.meta.url), 'utf8');
+const js = readFileSync(new URL('../script.js', import.meta.url), 'utf8');
+assert.match(html, /<main id="conteudo">/);
+assert.equal((html.match(/<h1\b/g) || []).length, 1);
+assert.equal((html.match(/class="product(?: |")/g) || []).length, 6);
+assert.equal((html.match(/data-product=/g) || []).length, 6);
+assert.equal((html.match(/alt="/g) || []).length >= 10, true);
+assert.match(html, /meta name="description"/);
+assert.match(html, /aria-live="polite"/);
+assert.match(css, /prefers-reduced-motion:reduce/);
+assert.match(css, /@media\(max-width:720px\)/);
+assert.match(js, /addEventListener\('click'/);
+for (const file of readdirSync(new URL('../assets/', import.meta.url))) assert.match(file, /\.svg$/);
+console.log('TCA checks: semântica, conteúdo, assets e comportamento base OK');

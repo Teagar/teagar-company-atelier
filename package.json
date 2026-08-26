@@ -1,0 +1,1 @@
+{"name":"teagar-company-atelier","private":true,"scripts":{"check":"node tests/check.mjs"}}
